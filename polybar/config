@@ -1162,8 +1162,8 @@ ws-icon-0 = Dev;
 ws-icon-1 = Web;
 ws-icon-2 = Term;
 ws-icon-3 = Obs;
-ws-icon-4 = 5;
-ws-icon-5 = 6;
+ws-icon-4 = Virt;
+ws-icon-5 = Debian;
 ws-icon-6 = 7;
 ws-icon-7 = 8;
 ws-icon-8 = 9;
@@ -1499,7 +1499,7 @@ format-padding = 2
 ;   %percentage% (default) - total cpu load
 ;   %percentage-cores% - load percentage for each core
 ;   %percentage-core[1-9]% - load percentage for specific core
-label = Cpu: %percentage:3%%
+label = Cpu: %percentage:3%% 
 
 ################################################################################
 
@@ -1519,7 +1519,7 @@ format-prefix-foreground = #c1941a
 format-underline = #ffff96
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
-label = %date% | %time%
+label = %date% - %time% 
 
 #################################################################
 
@@ -1625,7 +1625,7 @@ format-mounted-underline = #5a463f
 ;   %free%
 ;   %used%
 ; Default: %mountpoint% %percentage_free%%
-label-mounted = %mountpoint% : %used% used of %total%
+label-mounted =  %mountpoint% : %used% used of %total% 
 
 ; Available tokens:
 ;   %mountpoint%
@@ -1645,8 +1645,8 @@ interval = 1024
 
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
-format-prefix = "  "
-format-prefix-foreground = #0084FF
+format-prefix = "Kernel:  "
+format-prefix-foreground = #FFFFFF
 format-underline = #5b3d3f
 
 ################################################################################
@@ -1721,7 +1721,7 @@ interval = 1
 ;   %mb_used%
 ;   %mb_free%
 ;   %mb_total%
-label = %percentage_used%% | %percentage_free%%
+label = %percentage_used%% | %percentage_free%% 
 
 format = Mem: <label>
 format-prefix = "  "
@@ -2230,7 +2230,7 @@ use-ui-max = true
 
 interval = 5
 
-format-volume = <ramp-volume> <label-volume>
+format-volume = Vol: <ramp-volume> <label-volume>
 
 label-muted = "  muted "
 
